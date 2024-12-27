@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBills.updatecustomerBillActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardloadingPrograssBarCUB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/loadingPrograssBarCUB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backbtnUcB"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/backbtnUcB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backbtnUcB" />
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="51dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/nameUcB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="name"
+                android:textColorHint="@color/palpal"
+                android:inputType="text"
+                android:padding="11dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/numberUcB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+
+            <TextView
+                android:id="@+id/qwerUc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="27dp"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="2dp"
+                />
+
+
+
+            <EditText
+
+                android:id="@+id/areaUcB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="Area"
+                android:inputType="text"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <EditText
+
+                android:id="@+id/pincodeUcB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="pincode"
+                android:inputType="number"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <EditText
+
+                android:id="@+id/cityUcB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="city"
+                android:inputType="text"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancellbtnUcB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:padding="5dp"
+                    android:text="Cencel" />
+
+                <Button
+                    android:id="@+id/updatebtnUcB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/yello"
+                    android:padding="5dp"
+                    android:visibility="invisible"
+                    android:text="Update" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

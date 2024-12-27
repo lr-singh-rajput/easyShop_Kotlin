@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.updateItemActivity">
+
+    <TextView
+        android:id="@+id/SHOWIDI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPrograssBarIU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/loadingPrograssBarIU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+
+            android:visibility="invisible" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="updateItem"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="8dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item Name"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/nameitemUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="name"
+                android:inputType="text"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buy price"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/buyitemUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="buy price"
+                android:inputType="number"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swll price"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/sellitemUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="sell price"
+                android:inputType="number"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stock"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/stockitemUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="stock"
+
+                android:inputType="number"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Unit"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/unititemUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/box_bg"
+                android:hint="kg,bag,box,packs,cans,lenght"
+                android:inputType="text"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                android:visibility="invisible" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelbtn_itu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/red"
+                    android:padding="5dp"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/updatebtn_itu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/yello"
+                    android:padding="5dp"
+                    android:text="Update"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

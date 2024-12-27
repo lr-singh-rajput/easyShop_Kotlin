@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710387011139",
+    "project_id": "dataentrybook-7d5ed",
+    "storage_bucket": "dataentrybook-7d5ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710387011139:android:dfc65b361c41d5e4630ef6",
+        "android_client_info": {
+          "package_name": "com.SapnokitPaat.EaseShop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI1zKi2RQIwNsfBj06CTSdLF00nx9CZUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.additemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="unit"
+                android:textSize="22sp"
+
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/textView45"
+                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+            <EditText
+                android:id="@+id/savestockItem"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_bg"
+                android:ems="10"
+                android:hint="enter item stock"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView45"
+                app:layout_constraintEnd_toEndOf="@+id/savebuyprice"
+                app:layout_constraintStart_toStartOf="@+id/savebuyprice"
+                app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add items"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/AI_backbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/AI_backbtn"
+                app:layout_constraintTop_toTopOf="@+id/AI_backbtn" />
+
+            <ImageView
+                android:id="@+id/AI_backbtn"
+                android:layout_width="23dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_btn" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AI_backbtn">
+
+                <ImageView
+                    android:id="@+id/imageitemsave"
+                    android:layout_width="123dp"
+                    android:layout_height="123dp"
+                    android:scaleType="centerCrop"
+
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/shopimage" />
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:id="@+id/saveitemname"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/box_bg"
+                android:hint="enter item name"
+                android:inputType="text"
+                android:maxLength="21"
+                android:padding="5dp"
+                android:textColorHint="@color/palpal"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="sell price"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/saveshellprice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/saveshellprice" />
+
+            <EditText
+                android:id="@+id/saveshellprice"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_bg"
+                android:ems="10"
+                android:hint="sell price"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/saveitemname" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Buy price"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <EditText
+
+                android:id="@+id/savebuyprice"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/box_bg"
+                android:ems="10"
+                android:hint="buy price"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="stock"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/saveUnitI"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box_bg"
+                android:ems="10"
+                android:hint="enter unit (kg,box)"
+
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:padding="11dp"
+                android:textColorHint="@color/palpal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                app:layout_constraintEnd_toEndOf="@+id/savestockItem"
+                app:layout_constraintStart_toStartOf="@+id/savestockItem"
+                app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+            <Button
+                android:id="@+id/saveitembtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="@color/palpal"
+                android:text="add item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saveUnitI" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51dp"
+                android:text="item name"
+                android:textColor="@color/black"
+
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/saveitemname"
+                app:layout_constraintEnd_toEndOf="@+id/saveitemname"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

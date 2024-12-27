@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#FFFFFFFF</color>
+    <color name="red">#CD3838</color>
+    <color name="yello">#CFB25A</color>
+    <color name="palpal">#2F88D6</color>
+    <color name="firoji">#16C8DE</color>
+    <color name="green">#3B9647</color>
+    <color name="blue">#0000FF</color>
+    <color name="whitcardAd">#FDF6FE</color>
+
+
+</resources>
