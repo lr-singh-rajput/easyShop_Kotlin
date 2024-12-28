@@ -13,9 +13,11 @@
 <p>Platforn: Android</p>
 
 <h1> App images </h1>
-<img src="https://github.com/lr-singh-rajput/dev_web/blob/my-new-branch/web/assets/assets/images/chat1.png" alt="Sample Image">
+<img src="https://github.com/lr-singh-rajput/dev_web/blob/my-new-branch/web/assets/assets/images/datae1.png" alt="Sample Image">
 
-<img src="https://github.com/lr-singh-rajput/dev_web/blob/my-new-branch/web/assets/assets/images/chat2.png" alt="Sample Image">
+<img src="https://github.com/lr-singh-rajput/dev_web/blob/my-new-branch/web/assets/assets/images/datae2.png" alt="Sample Image">
+
+<img src="https://github.com/lr-singh-rajput/dev_web/blob/my-new-branch/web/assets/assets/images/datae3.png" alt="Sample Image">
 
 
 
